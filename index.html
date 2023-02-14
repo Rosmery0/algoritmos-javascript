@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Algoritmos</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+
+        </div>
+        <div class="card">
+            <h2>1. Calcular distancia</h2>
+            <div class="form-group">
+                <div class="input-field col s12">
+                    <label for="velocity1">Velocidad (km/h): </label>
+                    <input id="velocity1" type="number" class="validate">
+                </div>
+                <div class="input-field col s12">
+                    <label for="time1">Tiempo (h): </label>
+                    <input id="time1" type="number" class="validate">
+                </div>
+                <p>La distacia que recorrio el auto fue: <span id="result1"></span></p>
+                <button onclick="calculateDistance()">Calcular</button>
+                <p id="textError1" class="text-error">Introduzca los datos correctos.</p>
+            </div>
+        </div>
+        <div class="card">
+            <h2>2. Calcular Tiempo</h2>
+            <div class="form-group">
+                <div class="input-field col s12">
+                    <label for="velocity2">Velocidad (km/h): </label>
+                    <input id="velocity2" type="number" class="validate">
+                </div>
+                <div class="input-field col s12">
+                    <label for="distance2">Distancia (km): </label>
+                    <input id="distance2" type="number" class="validate">
+                </div>
+                <p>La distacia que recorrio el auto fue: <span id="result2"></span></p>
+                <button onclick="calculateTime()">Calcular</button>
+                <p id="textError2" class="text-error">Introduzca los datos correctos.</p>
+            </div>
+        </div>
+        <div class="card">
+            <h2>3. Calcular Velocidad</h2>
+            <div class="form-group">
+                <div class="input-field col s12">
+                    <label for="distance3">Distancia (km): </label>
+                    <input id="distance3" type="number" class="validate">
+                </div>
+                <div class="input-field col s12">
+                    <label for="time3">Tiempo (h): </label>
+                    <input id="time3" type="number" class="validate">
+                </div>
+                <p>La distacia que recorrio el auto fue: <span id="result3"></span></p>
+                <button onclick="calculateVelocity()">Calcular</button>
+                <p id="textError3" class="text-error">Introduzca los datos correctos.</p>
+            </div>
+        </div>
+        <div class="card">
+            <h2>3. Sucesion Fibonacci</h2>
+            <div class="form-group">
+                <div class="input-field col s12">
+                    <label for="fibonacciCant">Cantidad: </label>
+                    <input id="fibonacciCant" type="number" class="validate">
+                </div>
+                <p>La distacia que recorrio el auto fue: <span id="result4"></span></p>
+                <button onclick="showFibonacci()">Calcular</button>
+                <p id="textError4" class="text-error">Introduzca los datos correctos.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
